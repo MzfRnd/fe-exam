@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="./assets/image/favicon.ico"
+    />
     <link rel="stylesheet" href="./assets/style/reset.css" />
     <link rel="stylesheet" href="./assets/style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,7 +17,15 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aleo:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      data-auto-a11y="true"
+    ></script>
+    <title>BHROMAON</title>
   </head>
   <body>
     <main>
@@ -25,12 +38,13 @@
         </div>
         <form class="form-container">
           <input
+            required
             class="form-container__input font-josephin"
             type="text"
             placeholder="Search Your Travel Destination"
           />
           <button class="form-container__btn font-aleo">
-            Search
+            <span class="form-container__btn--pos">Search</span>
             <span class="form-container__search-ico">
               <svg class="form-container__search-ico">
                 <use xlink:href="./assets/image/magnify.svg#magnify"></use>
@@ -49,17 +63,17 @@
         <nav class="nav-container">
           <div class="nav-container__company-name font-josephin">Bhromaon</div>
           <div class="nav-container__links">
-            <a href="" class="nav-container__link">Who We Are</a>
-            <a href="" class="nav-container__link">What We Do</a>
-            <a href="" class="nav-container__link">Travel With Us</a>
-            <a href="" class="nav-container__link">Contact Us</a>
+            <a href="" class="nav-container__link font-aleo">Who We Are</a>
+            <a href="" class="nav-container__link font-aleo">What We Do</a>
+            <a href="" class="nav-container__link font-aleo">Travel With Us</a>
+            <a href="" class="nav-container__link font-aleo">Contact Us</a>
           </div>
         </nav>
       </section>
       <section class="second-container">
         <div class="top-side">
           <article class="top-side__texts">
-            <h2 class="top-side__title font-aleo">Why Choose Us</h2>
+            <p class="top-side__title font-aleo">Why Choose Us</p>
             <p class="top-side__description font-josephin">
               Tion and dislike men who are so b-eguiled and demoralized by
               desire by the charms of pleasure of the moment, so blinded by
@@ -68,7 +82,9 @@
               Ddislike men who are so beguiled and demoralized by the charms of
               pleasure of the moment, so blinded by desire, that.
             </p>
-            <button class="all-btn font-aleo">Explore Places</button>
+            <button class="all-btn top-side__btn font-aleo">
+              Explore Places
+            </button>
           </article>
           <article class="top-side__imgs">
             <img
@@ -92,13 +108,13 @@
               <svg class="bottom-side__magnify">
                 <use xlink:href="./assets/image/blue-magnify.svg#blue"></use>
               </svg>
-              <h2 class="bottom-side__title">Search Places</h2>
+              <h2 class="bottom-side__title font-aleo">Search Places</h2>
             </div>
             <div class="bottom-side__div">
               <svg class="bottom-side__check">
                 <use xlink:href="./assets/image/check.svg#check"></use>
               </svg>
-              <h2 class="bottom-side__title">Select Places</h2>
+              <h2 class="bottom-side__title font-aleo">Select Places</h2>
             </div>
             <div class="bottom-side__div">
               <svg class="bottom-side__thumb">
@@ -110,35 +126,94 @@
         </div>
       </section>
       <section class="third-container third-set">
-        <article class="third-container__div">
-          <div class="container-div deneme">
-            <h4 class="container-div__small-title font-josephine">Spain</h4>
-            <h3 class="container-div__big-title font-josephine">
+        <div class="outer-div third-container__group">
+          <article class="container-block">
+            <h4 class="container-block__small-title font-josephin">Spain</h4>
+            <h3 class="container-block__big-title font-josephin">
               Grand Spain Madrid
             </h3>
-            <p class="container-div__description font-josephine">
+            <p class="container-block__description font-josephin">
               But I must explain to you how all this mistaken idea of account to
               denouncing pleasure and praising pain was account born and I
               account will give you a complete account of the system
             </p>
             <button class="all-btn">Book Now</button>
-          </div>
-        </article>
+          </article>
+        </div>
       </section>
       <section class="forth-container third-set">
-        <article class="forth-container__div container-div">
-          <h4 class="container-div__small-title font-josephine">Spain</h4>
-          <h3 class="container-div__big-title font-josephine">
-            Grand Spain Madrid
-          </h3>
-          <p class="container-div__description font-josephine">
-            But I must explain to you how all this mistaken idea of account to
-            denouncing pleasure and praising pain was account born and I account
-            will give you a complete account of the system
-          </p>
-          <button class="all-btn">Book Now</button>
-        </article>
+        <div class="outer-div forth-container__group">
+          <article class="container-block">
+            <h4 class="container-block__small-title font-josephine">Spain</h4>
+            <h3 class="container-block__big-title font-josephin">
+              Grand Spain Madrid
+            </h3>
+            <p class="container-block__description font-josephin">
+              But I must explain to you how all this mistaken idea of account to
+              denouncing pleasure and praising pain was account born and I
+              account will give you a complete account of the system
+            </p>
+            <button class="all-btn">Book Now</button>
+          </article>
+        </div>
       </section>
+      <section class="fifth-container">
+        <h2 class="fifth-container__title font-aleo">What Our Tourist Say</h2>
+        <div class="fifth-container__card">
+          <img
+            class="fifth-container__img"
+            src="./assets/image/card-image_x2.png"
+            alt=""
+          />
+          <div class="card-container">
+            <h3 class="card-container__title font-josephin">Sam Sumon</h3>
+            <p class="card-container__description font-josephin">
+              <span class="quote"><i class="fas fa-quote-left"></i></span>
+              But I must explain to you how all this mistaken idea of account to
+              denouncinpleasure and praising pain But I must explain to you how
+              all this mistaken idea of account to nai denouncing pleasure and
+              praising pain was account born and I account will give you a
+              complete account of the system was account born and I account will
+              give you a nai the complete account of the system
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="foot-container">
+        <div class="foot-container__box">
+          <h3 class="foot-container__big-title font-josephin">Bhromaon</h3>
+          <h4 class="foot-container__small-title font-josephin">
+            Safe Travel Anywhere
+          </h4>
+        </div>
+        <div class="foot-container__link-block">
+          <a class="foot-container__anchor" href="">
+            <svg class="foot-container__links">
+              <use xlink:href="./assets/image/facebook.svg#face"></use>
+            </svg>
+          </a>
+          <a class="foot-container__anchor" href="">
+            <svg class="foot-container__links">
+              <use xlink:href="./assets/image/twitter.svg#twitter"></use>
+            </svg>
+          </a>
+          <a class="foot-container__anchor" href="">
+            <svg class="foot-container__links">
+              <use xlink:href="./assets/image/linked.svg#linked"></use>
+            </svg>
+          </a>
+          <a class="foot-container__anchor" href="">
+            <svg class="foot-container__links">
+              <use xlink:href="./assets/image/youtube.svg#youtube"></use>
+            </svg>
+          </a>
+          <a class="foot-container__anchor" href="">
+            <svg class="foot-container__links">
+              <use xlink:href="./assets/image/pinterest.svg#pinterest"></use>
+            </svg>
+          </a>
+        </div>
+      </footer>
     </main>
   </body>
 </html>
